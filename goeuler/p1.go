@@ -1,4 +1,4 @@
-package euler
+package goeuler
 
 import (
 	util "euler/lib"
