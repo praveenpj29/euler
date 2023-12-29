@@ -52,3 +52,16 @@ func LCMArray(arr []int) int {
 	}
 	return result
 }
+
+func Reverse(num int) int{
+	reversed := 0
+	for num > 0 {
+		reversed = 10 * reversed + num % 10
+		num /= 10
+	}
+	return reversed
+} 
+
+func IsPalindrome(num int) bool {
+	return num == Reverse(num)
+}
