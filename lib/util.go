@@ -16,39 +16,24 @@ func IsPrime(num int) bool {
 	return true
 }
 
-// Function to calculate the greatest common divisor (GCD)
-func gcd(a, b int) int {
-	for b != 0 {
-		a, b = b, a%b
-	}
-	return a
-}
-
-// Function to calculate the least common multiple (LCM)
-func lcm(a, b int) int {
-	if a == 0 || b == 0 {
-		return 0
-	}
-	return abs(a*b) / gcd(a, b)
-}
-
-// Function to find the absolute value
-func abs(a int) int {
-	if a < 0 {
-		return -a
-	}
-	return a
-}
-
 // Function to find the LCM of elements in an array
+// Euclidean algorithm
 func LCMArray(arr []int) int {
 	if len(arr) == 0 {
 		return 0
 	}
-
-	result := arr[0]
-	for i := 1; i < len(arr); i++ {
-		result = lcm(result, arr[i])
+	result := arr[0] 
+	for i:= 1 ; i < len(arr); i++ {
+		num1 := result
+		num2 := arr[i]
+		gcd := 1
+		for num2 > 0 {
+			temp := num2
+			num2 = num1 % num2
+			num1 = temp
+		}
+		gcd = num1
+		result = (result * arr[i]) / gcd
 	}
 	return result
 }
