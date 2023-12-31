@@ -8,7 +8,7 @@ func IsPrime(num int) bool {
 	if num <= 3 {
 		return true
 	}
-	for i := 3; i < int(math.Sqrt(float64(num))) ; i = i + 2 {
+	for i := 3; i <= int(math.Sqrt(float64(num))) ; i = i + 2 {
 		if num % i == 0 {
 			return false
 		}
