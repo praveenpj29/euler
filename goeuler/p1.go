@@ -21,6 +21,6 @@ func cal(nums []int, limit int) int {
 	return result - summation(lcm, limit)
 }
 
-func P1() int {
+func (e *EulerFuncs) P1() int {
 	return cal([]int{3, 5}, 1000)
 }

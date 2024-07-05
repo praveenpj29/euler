@@ -34,6 +34,6 @@ func largestPalindromeProduct(num int) int{
 	return largestPalindrome
 }
 
-func P4() int{
+func (e *EulerFuncs) P4() int{
 	return largestPalindromeProduct(3)
 }

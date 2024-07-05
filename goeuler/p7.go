@@ -16,6 +16,6 @@ func nthPrime(n int) int {
 	return primeNum
 }
 
-func P7() int {
+func (e *EulerFuncs) P7() int {
 	return nthPrime(10001)
 }

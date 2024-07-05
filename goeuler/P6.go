@@ -6,6 +6,6 @@ func sumSquareDiff(num int) int {
 	return (n_sum * n_sum) - n_square_sum
 }
 
-func P6() int {
+func (e *EulerFuncs) P6() int {
 	return sumSquareDiff(100)
 }
