@@ -21,6 +21,6 @@ func largePrimeFactor(num int) int {
 	return last_fact
 }
 
-func P3() int {
+func (e *EulerFuncs) P3() int {
 	return largePrimeFactor(600851475143)
 }

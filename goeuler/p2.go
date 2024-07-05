@@ -10,7 +10,7 @@ func evenFibSum(num int) int{
 	return sum
 }
 
-func P2() int {
+func (e *EulerFuncs) P2() int {
 	return evenFibSum(4000000)
 }
 

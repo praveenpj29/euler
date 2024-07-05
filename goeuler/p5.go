@@ -14,6 +14,6 @@ func smallestMultiple(len int) int {
 	return result
 }
 
-func P5() int {
+func (e *EulerFuncs) P5() int {
 	return smallestMultiple(20)
 }
